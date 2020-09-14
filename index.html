@@ -53,38 +53,38 @@
         <div class="container">
             <div class="first-section row flex-row align-items-center justify-content-center">
             <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
-                <h1>Compose your SmartPhone</h1>
-                <p>Smart Phone allows you to bla bla bla ...</p>
-                <button style="margin-top: 20px; min-width: 150px;" id='try_it'>Try it</button>
+                <h1>Make your SmartPhone</h1>
+                <p>Personalizza il tuo telefono e crea il tuo stile</p>
+                <button style="margin-top: 20px; min-width: 150px;" id='try_it'>Componilo</button>
                 </div>
                 <div class="col-md-6">
-                  <img src="img/first.jpg">
+                  <img src="img/first.jpeg">
                 </div>
             </div>  
             <div class="row flex justify-content-center">
-              <h3 class="text-center">Create your Configuration</h3>
+              <h3 class="text-center">La cover secondo i tuoi gusti</h3>
             </div>          
             <div class="second-section row">            
                 <div class="col-md-6">
                   <img src="img/printer.jpg">
                 </div>
                 <div class="col-md-6 d-flex justify-content-center align-items-center">
-                descrizione bla bla bla
+                La scocca del telefono è prodotta presso la nostra azienda tramite materiali eco sostenibili su stampante 3D così ogni modello è diverso dagli altri
                 </div>
             </div>
             <div class="row flex justify-content-center">
-              <h3 class="text-center">Create your Configuration</h3>
+              <h3 class="text-center">Ottimizzazione delle specifiche</h3>
             </div> 
             <div class="second-section row">            
                 <div class="col-md-6 d-flex justify-content-center align-items-center">
-                descrizione bla bla bla
+                SmartPhone permette a tutti i suoi clienti di comprare uno smartphone fatto su misura per le loro necessità. Questo consente ai clienti di evitare di comprare hardware che sia troppo o troppo poco potente, pagando sempre il giusto prezzo.
                 </div>
                 <div class="col-md-6">
-                  <img src="img/printer.jpg">
+                  <img style="max-width: 400px;" src="img/icon.png">
                 </div>
             </div>
             <div class="row flex justify-content-center">
-              <h3 class="text-center">Create your Configuration</h3>
+              <h3 class="text-center" id='configuration'>Crea la tua configurazione</h3>
             </div>
             <div class="second-section row">            
                 <div class="col-md-6">
@@ -130,7 +130,7 @@
             <div class="row flex flex-column align-items-center">
               <h3>What you're going to pay</h3>
               <p>€359.99</p>
-              <button style="margin-top: 20px; min-width: 150px; margin-bottom: 40px;">Buy now</button>
+              <button style="margin-top: 20px; min-width: 150px; margin-bottom: 40px;">Compralo ora</button>
             </div>
         </div>
         <div class="footer d-flex flex-column justify-content-center align-items-center">
@@ -144,8 +144,9 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script type="text/javascript">
   document.getElementById('try_it').addEventListener('click', function() {
-    window.scrollBy(0, window.innerHeight / 2,'smooth');
-    console.log('works')
+    document.querySelector('#configuration').scrollIntoView({
+        behavior: 'smooth'
+    });
   })
 </script>
     </body>
